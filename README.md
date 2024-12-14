@@ -1,2 +1,2 @@
 # Harmonic-Legacy
-CSC 104 Final Project
+This CSC 104 Final Project is a website made to show music in different times and differnt versions of music, as well as the timeline for them. This includes hip-hop, jazz, rock, and R&B, as well as the home page. With each file linked together, such as the hip-hop.html to the hip-hop.css, home_page.html to the final_project.css, jazz.html to the jazz.css, rock.html to the rock.css, and R&B.html to the R&B.css, the css files design each html file that they are connected to.
