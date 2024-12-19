@@ -1,0 +1,73 @@
+body{
+    /* background */
+    background-color:rgb(74, 2, 125);
+    /* remove the outside margin */
+    margin:0;
+    /* change the font */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* we want to use the grid layout for this example */
+    display: grid;
+    /* define a grid with 3 rows */
+    grid-template-rows: auto 1fr auto; 
+    /* set the height to use the whole page */
+    height: 75vh;
+}
+
+/* styles for the header tag */
+header{
+    /* tell the browser that this is row 1 of our grid layout */
+    grid-row: 1;
+    /* set a fixed height for the header */
+    height: 90px;
+    /* set a fixed width so it covers the whole page */
+    width: 100%;
+    /* set up a different background color for the header */
+    background-color:rgb(247, 229, 248);
+    /* set up a light text color */
+    color:  rgb(75, 31, 103);
+    /* center the text */
+    text-align: center;
+    /* make the header at the top of the page remain visible when scrolling */
+    position: fixed;
+    /* position the header at the top of the screen */
+    top: 0;
+    /* ensure that my header appears above other elements (for example, aside and the footer) */
+    z-index: 1;
+    /* make sure the font is how I would want it to be */
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+main{
+    /* posiiton the main section as the 2nd row/middle of the grid layout */
+    grid-row: 2;
+    /* add some padding to make sure our row does not overlap the header */
+    padding-top: 100px;
+    /* set the width to 75% */
+    width: 95%;
+    /* center the main content horizontally; */
+    margin: 0 auto;  
+}
+
+        /* these styles will only affect the images with the musicians class  */
+        img.recipe{
+            width: 400px;
+            height: 500px;
+        }
+        
+        /* this is our custom class that willl create a flex layout - this is the parent container */
+        .flex-container{
+            display: flex;
+            justify-content: space-between;  /* the browser will distribute items evenly */
+            align-items: flex-start; /* vertically align the items */
+            padding: 20px;
+        }
+        
+        /* these are the column styles */
+        .column{
+             flex: 1; /* this allows our columns to fill in the available space */
+             background-color: rgb(247, 229, 248);
+             padding: 15px;
+             border: 1px solid rgb(3, 3, 2);
+             box-shadow: 0px 2px 4px rgb(3, 3, 2);
+             text-align: center;
+        }

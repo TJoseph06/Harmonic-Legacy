@@ -1,0 +1,104 @@
+ body{
+                /* background */
+                background-color:lightslategray;
+                /* remove the outside margin */
+                margin:0;
+                /* change the font */
+                font-family:'Times New Roman', Times, serif;
+                /* we want to use the grid layout for this example */
+                display: grid;
+                /* define a grid with 3 rows */
+                grid-template-rows: auto 1fr auto; 
+                /* set the height to use the whole page */
+                height: 75vh;
+            }
+    
+            /* styles for the header tag */
+            header{
+                /* tell the browser that this is row 1 of our grid layout */
+                grid-row: 1;
+                /* set a fixed height for the header */
+                height: 90px;
+                /* set a fixed width so it covers the whole page */
+                width: 100%;
+                /* set up a different background color for the header */
+                background-color:rgb(6, 73, 73);
+                /* set up a light text color */
+                color: beige;
+                /* center the text */
+                text-align: center;
+                /* make the header at the top of the page remain visible when scrolling */
+                position: fixed;
+                /* position the header at the top of the screen */
+                top: 0;
+                /* ensure that my header appears above other elements (for example, aside and the footer) */
+                z-index: 1;
+            }
+            /* styles for the main section */
+            main{
+                /* position the main section as the 2nd row/middle of the grid layout */
+                grid-row: 2;
+                /* add some padding to make sure our row does not overlap the header */
+                padding-top: 100px;
+                /* set the width to 75% */
+                width: 95%;
+                /* center the main content horizontally; */
+                margin: 0 auto;  
+            }
+
+            h3{
+                    grid-row: 3;
+                    padding-top:20px;
+                }
+
+            h4{
+                grid-row: 5;
+                height: 80px;
+                font-size: larger;
+                color:gold;
+            }
+
+            .box{
+            position: 150px;
+            width: 250px;
+            height: 270px;
+            background-color:rgb(6, 73, 73);
+            color:darkgray;
+            /* padding: 50px; 50px on each side */
+            /* padding: 40px, 20px, 30px, 100px; top, right, bottom, left*/
+             padding-top:50px;
+             padding-right:30px;
+             padding-bottom:40px;
+             padding-left:20px;
+
+            
+             border: 5px solid black;
+             border-top: 4px solid black;
+             border-right: 8px solid black;
+             border-bottom:  4px solid black;
+             border-left: 8px solid black;
+
+             margin: 50px;
+             margin-top: 20px;
+             margin-right: 30px;
+             margin-bottom: 20px;
+             margin-left: 20px;
+        }
+
+        .container{
+            display: flex;
+            flex: wrap;
+            padding: 10px;
+        }
+
+        /* create the styles of the child divs that hold the images so the images are displayed responsively */
+        .galleryDivs{
+            max-width: 25%;
+            flex: 25%;
+            padding: 5px;
+        }
+
+        .galleryDivs img{
+            width: 100%;
+            height: 25%;
+        }
